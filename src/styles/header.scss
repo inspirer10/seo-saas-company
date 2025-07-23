@@ -1,0 +1,120 @@
+header {
+    height: 100vh;
+    padding: 15rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //background: linear-gradient(135deg, rgba(5, 5, 10, 1.000) 0.000%, rgba(18, 19, 22, 1.000) 25.000%, rgba(30, 31, 34, 1.000) 50.000%, rgba(41, 42, 45, 1.000) 75.000%, rgba(48, 49, 53, 1.000) 100.000%);
+    background: linear-gradient(135deg, rgba(196, 128, 24, 1.000) 0.000%, rgba(186, 104, 0, 1.000) 8.333%, rgba(173, 80, 0, 1.000) 16.667%, rgba(159, 55, 0, 1.000) 25.000%, rgba(144, 30, 0, 1.000) 33.333%, rgba(127, 5, 0, 1.000) 41.667%, rgba(110, 0, 0, 1.000) 50.000%, rgba(92, 0, 0, 1.000) 58.333%, rgba(73, 0, 0, 1.000) 66.667%, rgba(54, 0, 0, 1.000) 75.000%, rgba(36, 0, 0, 1.000) 83.333%, rgba(18, 0, 0, 1.000) 91.667%, rgba(0, 0, 0, 1.000) 100.000%);
+    .overHeading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            outline: 1px solid rgba(255, 255, 255, 0.6);
+            will-change: transform;
+            transition: .3s ease;
+            transform-origin: center center;
+            &:nth-of-type(2) {
+                transform: translateX(-15%);
+                &:hover {
+                    z-index: 20;
+                    transform: scale(1.25) translate(-15%, -4px);
+                }
+            }
+            &:nth-of-type(3) {
+                transform: translateX(-30%);
+                &:hover {
+                    z-index: 20;
+                    transform: scale(1.25) translate(-30%, -4px);
+                }
+            }
+            &:hover {
+                z-index: 20;
+                transform: scale(1.25) translate(0, -4px);
+                outline-color: rgba(255, 255, 255, 0);
+            }
+        }
+        p {
+            font-family: 'Geist', sans-serif;
+            font-size: 20px;
+            letter-spacing: -0.25px;
+            color: rgb(225, 225, 225);
+        }
+    }
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 6rem;
+        font-weight: 500;
+        letter-spacing: -1.5px;
+        line-height: 1.15;
+        margin: 1.5rem 0 1rem;
+        span {
+            font-family: "Instrument Serif", serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+    .subHeading {
+        font-size: 18px;
+        color: rgb(145, 145, 145);
+        color: rgb(185, 185, 185);
+        display: flex;
+        justify-content: center;
+        width: 35%;
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: -0.15px;
+        line-height: 1.5;
+    }
+    .buttons-wrapper {
+        margin: 2rem 0 0;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        button {
+            font-family: 'Geist', sans-serif;
+            line-height: 1;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            background: linear-gradient(90deg, #ff6542 0%, #f85747 100%);
+            padding: 16px 2.5rem;
+            border: none;
+            border-radius: 14px;
+            box-shadow: 0 1px 10px rgba(255, 101, 66, 0.2);
+            outline: 3px solid rgba(255, 151, 91, 0.3);
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                background: linear-gradient(90deg, #f85747 0%, #ff6542 100%);
+                box-shadow: 0 4px 16px rgba(255, 101, 66, 0.32);
+                outline: 3px solid rgba(255, 151, 91, 0.15);
+            }
+            &.success-button {
+                background: rgba(0, 0, 0, 0.6);
+                outline: 3px solid rgba(0, 0, 0, 0.2) !important;
+                backdrop-filter: blur(5px);
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+    .partners-container {
+        margin-top: 5rem;
+        p {
+            color: rgb(165, 165, 165);
+            font-family: 'Geist', sans-serif;
+            line-height: 1;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

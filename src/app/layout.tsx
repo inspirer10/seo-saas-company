@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.scss';
+import '../styles/navbar.scss';
+import '../styles/header.scss';
+import '../styles/results.scss';
+import '../styles/services.scss';
 
 export const metadata: Metadata = {
     title: 'SEO SaaS Company',
