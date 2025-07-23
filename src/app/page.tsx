@@ -1,11 +1,15 @@
 'use client';
 
-import Header from '@/components/Header';
-import Navbar from '@/components/Navbar';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
+
+//* Components
+import Header from '@/components/Header';
+import Navbar from '@/components/Navbar';
 import Results from '@/components/Results';
 import Services from '@/components/Services';
+import GetStarted from '@/components/GetStarted';
+import Pricing from '@/components/Pricing';
 
 export default function Home() {
     useEffect(() => {
@@ -25,7 +29,9 @@ export default function Home() {
             <Header />
             <Results />
             <Services />
-            <h1>test</h1>
+            <GetStarted />
+            <Pricing />
+            <h1>Footer</h1>
         </>
     );
 }

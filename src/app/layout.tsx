@@ -4,6 +4,8 @@ import '../styles/navbar.scss';
 import '../styles/header.scss';
 import '../styles/results.scss';
 import '../styles/services.scss';
+import '../styles/getStarted.scss';
+import '../styles/pricing.scss';
 
 export const metadata: Metadata = {
     title: 'SEO SaaS Company',

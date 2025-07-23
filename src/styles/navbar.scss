@@ -7,13 +7,13 @@ nav {
     top: 1rem;
     transform: translateX(-50%);
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: none;
-    outline: 1px solid rgba(255, 255, 255, 0.175);
+    outline: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 22px;
     padding: 14px 1.25rem;
     padding-left: 1.5rem;
@@ -41,7 +41,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 2.25rem;
         p {
             line-height: 1;
             padding: 2px;
@@ -49,11 +49,27 @@ nav {
             font-weight: 500;
             color: rgb(215, 215, 215);
             will-change: transform;
+            position: relative;
             cursor: pointer;
             transition: .3s ease;
             &:hover {
                 color: rgb(255, 255, 255);
                 transform: translateY(-2px);
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -3px;
+                transform: scaleX(0);
+                background: rgb(255, 255, 255);
+                height: 2px;
+                //transform-origin: center;
+                transition: transform 0.3s ease;
             }
         }
     }
