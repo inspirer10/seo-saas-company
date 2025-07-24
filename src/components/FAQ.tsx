@@ -38,7 +38,7 @@ function FAQ() {
     ];
 
     return (
-        <section className='faq_section'>
+        <section className='faq_section' id='faq'>
             <h2>FAQ</h2>
             <p className='subHeading'>
                 Discover clear answers to the questions we’re asked most often

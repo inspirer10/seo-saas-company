@@ -36,7 +36,16 @@
             border: 1px solid rgb(40, 40, 40);
             box-shadow: none;
             overflow: hidden;
-            transition: 0.3s ease;
+            transition: 0.325s ease;
+            transition-delay: 0.05s;
+            &:hover {
+                border-color: rgb(85, 85, 85);
+                border-color: #ff7354;
+            }
+            &:active {
+                transition: 0.025s ease;
+                border-color: #ff4920;
+            }
             &.open {
                 box-shadow: 0 4px 28px rgba(0, 0, 0, 0.13);
                 .faq-question .faq-icon {

@@ -51,7 +51,7 @@ function Pricing() {
     ];
 
     return (
-        <section className='pricing_section'>
+        <section className='pricing_section' id='pricing'>
             <p className='overHeading'>PRICING</p>
             <h2>
                 Transparent <span>Pricing</span>

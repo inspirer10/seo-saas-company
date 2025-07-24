@@ -16,27 +16,27 @@ function Results() {
             id: 1,
             name: 'John Doe',
             company: 'TechBoost',
-            img: '/image4.jpg',
+            img: '/image2.jpg',
             text: 'Thanks to Element’s SEO, we doubled our traffic in 6 months and landed on Google’s first page.',
         },
         {
             id: 2,
             name: 'Maria Dimitrova',
             company: 'GreenMarket',
-            img: '/image3.jpg',
+            img: '/image9.jpg',
             text: 'After the optimization, we saw a 70% increase in online sales! Working with this team was the best decision for our business.',
         },
         {
             id: 3,
             name: 'George Kowalski',
             company: 'AutoPro',
-            img: '/image2.jpg',
+            img: '/image4.jpg',
             text: 'From a local business, we became a leader in our niche. SEO optimization brought us more clients and greater visibility.',
         },
     ];
 
     return (
-        <section className='results_section'>
+        <section className='results_section' id='results'>
             <p className='overHeading'>RESULTS</p>
             <h2>
                 Real <span>Success</span>. Happy Clients.
@@ -53,8 +53,8 @@ function Results() {
                             <Image
                                 alt='user thumbnail'
                                 src={img}
-                                height={350}
-                                width={350}
+                                height={400}
+                                width={400}
                             />
                             <div className='player-icon'>
                                 <FaPlay />

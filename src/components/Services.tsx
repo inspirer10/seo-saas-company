@@ -40,7 +40,7 @@ function Services() {
     ];
 
     return (
-        <section className='services_section'>
+        <section className='services_section' id='services'>
             <p className='overHeading'>SERVICES</p>
             <h2>
                 Comprehensive <span>SEO</span> Services
