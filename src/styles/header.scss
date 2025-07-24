@@ -23,15 +23,19 @@ header {
             &:nth-of-type(2) {
                 transform: translateX(-15%);
                 &:hover {
-                    z-index: 20;
                     transform: scale(1.25) translate(-15%, -4px);
                 }
             }
             &:nth-of-type(3) {
                 transform: translateX(-30%);
                 &:hover {
-                    z-index: 20;
                     transform: scale(1.25) translate(-30%, -4px);
+                }
+            }
+            &:nth-of-type(4) {
+                transform: translateX(-45%);
+                &:hover {
+                    transform: scale(1.25) translate(-37.5%, -4px);
                 }
             }
             &:hover {

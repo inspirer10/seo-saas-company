@@ -1,0 +1,89 @@
+.faq_section {
+    padding: 7.5rem 0;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        margin: 1rem 0;
+        font-size: 5rem;
+        font-weight: 500;
+        font-family: "Instrument Serif", serif;
+        font-style: italic;
+        letter-spacing: 0.25px;
+    }
+    .subHeading {
+        font-size: 20px;
+        font-weight: 300;
+        color: rgb(185, 185, 185);
+        width: 45%;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .faqs-container {
+        margin-top: 2.5rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        .faq-item {
+            width: 100%;
+            position: relative;
+            margin-bottom: 1rem;
+            background: rgb(16, 16, 16);
+            border-radius: 1rem;
+            border: 1px solid rgb(50, 50, 50);
+            box-shadow: none;
+            grid-template-rows: 0fr;
+            transition: 0.3s ease;
+            &.open {
+                box-shadow: 0 4px 28px rgba(0, 0, 0, 0.13);
+                grid-template-rows: 1fr;
+                .faq-header .faq-icon {
+                    transform: rotate(45deg);
+                }
+            }
+            .faq-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem 2rem;
+                color: #fff;
+                font-size: 1.25rem;
+                background: rgb(16, 16, 16);
+                border-radius: 1rem;
+                cursor: pointer;
+                transition: 0.3s ease;
+                h3 {
+                    margin: 0;
+                    font-size: 1.16rem;
+                    font-weight: 500;
+                }
+                .faq-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.75rem;
+                    color: #ff6542;
+                    transition: transform 0.3s ease;
+                    transform-origin: center;
+                }
+            }
+            .faq-answer {
+                color: rgb(185, 185, 185);
+                font-size: 18px;
+                line-height: 1.5;
+                padding: 1.5rem 2.25rem 2rem;
+                width: 85%;
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease, opacity 0.3s ease;
+                &.open {
+                    opacity: 1;
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}

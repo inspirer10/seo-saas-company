@@ -18,6 +18,7 @@ function Pricing() {
                 'Primary and secondary logos',
                 'Full brand guidebook',
                 '2 weeks delivery',
+                'One free color palette suggestion',
             ],
         },
         {
@@ -30,6 +31,7 @@ function Pricing() {
                 '2 weeks delivery',
                 'Max 3 revisions',
                 'Figma files',
+                'Editable social media avatar included',
             ],
             highlight: true,
         },
@@ -40,9 +42,10 @@ function Pricing() {
             features: [
                 'Primary and secondary logos',
                 'Full brand guidebook',
-                '2 weeks delivery',
-                'Max 3 revisions',
+                '1 week delivery',
+                'Max 4 revisions',
                 'Figma files',
+                'Animated logo included',
             ],
         },
     ];

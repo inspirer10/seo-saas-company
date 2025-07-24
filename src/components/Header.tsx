@@ -26,6 +26,13 @@ function Header() {
                     quality={100}
                     alt='user avatar'
                 />
+                <Image
+                    src={'/image4.jpg'}
+                    height={75}
+                    width={75}
+                    quality={100}
+                    alt='user avatar'
+                />
                 <p>300+ happy clients</p>
             </div>
             <h1>

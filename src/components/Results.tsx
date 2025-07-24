@@ -14,9 +14,9 @@ function Results() {
     const testimonials: Testimonial[] = [
         {
             id: 1,
-            name: 'Ivan Petrov',
+            name: 'John Doe',
             company: 'TechBoost',
-            img: '/image1.jpg',
+            img: '/image4.jpg',
             text: 'Thanks to Element’s SEO, we doubled our traffic in 6 months and landed on Google’s first page.',
         },
         {
@@ -28,7 +28,7 @@ function Results() {
         },
         {
             id: 3,
-            name: 'Georgi Stoyanov',
+            name: 'George Kowalski',
             company: 'AutoPro',
             img: '/image2.jpg',
             text: 'From a local business, we became a leader in our niche. SEO optimization brought us more clients and greater visibility.',
