@@ -1,3 +1,4 @@
+import LenisProvider from '@/components/LenisProvider';
 import type { Metadata } from 'next';
 import './globals.scss';
 import '../styles/navbar.scss';
@@ -6,8 +7,8 @@ import '../styles/results.scss';
 import '../styles/services.scss';
 import '../styles/getStarted.scss';
 import '../styles/pricing.scss';
-import '../styles/faq.scss';
-import LenisProvider from '@/components/LenisProvider';
+import '../styles/testimonials.scss';
+import '../styles/Faq.scss';
 
 export const metadata: Metadata = {
     title: 'SEO SaaS Company',

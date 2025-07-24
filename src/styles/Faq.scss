@@ -6,23 +6,24 @@
     align-items: center;
     flex-direction: column;
     h2 {
-        margin: 1rem 0;
+        font-family: "Instrument Serif", serif;
         font-size: 5rem;
         font-weight: 500;
-        font-family: "Instrument Serif", serif;
         font-style: italic;
         letter-spacing: 0.25px;
+        line-height: 1.1;
+        margin: 1rem 0;
     }
     .subHeading {
         font-size: 20px;
         font-weight: 300;
         color: rgb(185, 185, 185);
-        width: 45%;
+        width: 50%;
         text-align: center;
         line-height: 1.5;
     }
     .faqs-container {
-        margin-top: 2.5rem;
+        margin-top: 3rem;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -30,58 +31,65 @@
             width: 100%;
             position: relative;
             margin-bottom: 1rem;
-            background: rgb(16, 16, 16);
+            background: rgb(12, 12, 12);
             border-radius: 1rem;
-            border: 1px solid rgb(50, 50, 50);
+            border: 1px solid rgb(40, 40, 40);
             box-shadow: none;
-            grid-template-rows: 0fr;
+            overflow: hidden;
             transition: 0.3s ease;
             &.open {
                 box-shadow: 0 4px 28px rgba(0, 0, 0, 0.13);
-                grid-template-rows: 1fr;
-                .faq-header .faq-icon {
+                .faq-question .faq-icon {
                     transform: rotate(45deg);
+                    color: #ff4920;
+                    transition: 0.275s ease;
                 }
             }
-            .faq-header {
+            .faq-question {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 1.5rem 2rem;
+                padding: 1.75rem 2rem;
                 color: #fff;
-                font-size: 1.25rem;
-                background: rgb(16, 16, 16);
                 border-radius: 1rem;
                 cursor: pointer;
                 transition: 0.3s ease;
                 h3 {
-                    margin: 0;
-                    font-size: 1.16rem;
+                    font-size: 22px;
                     font-weight: 500;
+                    margin: 0;
+                    line-height: 1;
                 }
                 .faq-icon {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 1.75rem;
+                    font-size: 30px;
                     color: #ff6542;
-                    transition: transform 0.3s ease;
                     transform-origin: center;
+                    transition: 0.225s ease;
                 }
             }
             .faq-answer {
-                color: rgb(185, 185, 185);
+                color: rgb(175, 175, 175);
                 font-size: 18px;
-                line-height: 1.5;
-                padding: 1.5rem 2.25rem 2rem;
-                width: 85%;
+                font-weight: 300;
+                line-height: 1.55;
+                width: 87.5%;
+                //opacity: 0;
+                padding: 0rem 2.25rem;
+                display: grid;
+                grid-template-rows: 0fr;
                 opacity: 0;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s ease, opacity 0.3s ease;
+                transition: 0.125s ease;
                 &.open {
+                    padding: 1.5rem 2.25rem 2rem;
+                    grid-template-rows: 1fr;
                     opacity: 1;
-                    max-height: 400px;
+                    transition: 0.275s ease;
+                }
+                p {
+                    overflow: hidden;
                 }
             }
         }

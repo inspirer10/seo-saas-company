@@ -5,6 +5,7 @@ import Results from '@/components/Results';
 import Services from '@/components/Services';
 import GetStarted from '@/components/GetStarted';
 import Pricing from '@/components/Pricing';
+import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
             <Services />
             <GetStarted />
             <Pricing />
+            <Testimonials />
             <FAQ />
         </>
     );

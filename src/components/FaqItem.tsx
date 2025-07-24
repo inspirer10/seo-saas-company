@@ -13,18 +13,16 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
 
     return (
         <article className={`faq-item${open ? ' open' : ''}`}>
-            <div className='faq-header' onClick={() => setOpen(!open)}>
+            <div className='faq-question' onClick={() => setOpen(!open)}>
                 <h3>{question}</h3>
                 <span className='faq-icon'>
                     <FiPlus />
                 </span>
             </div>
 
-            {open && (
-                <div className={`faq-answer${open ? ' open' : ''}`}>
-                    {answer}
-                </div>
-            )}
+            <div className={`faq-answer${open ? ' open' : ''}`}>
+                <p>{answer}</p>
+            </div>
         </article>
     );
 };
