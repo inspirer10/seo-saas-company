@@ -9,6 +9,7 @@ import '../styles/getStarted.scss';
 import '../styles/pricing.scss';
 import '../styles/testimonials.scss';
 import '../styles/Faq.scss';
+import '../styles/footer.scss';
 
 export const metadata: Metadata = {
     title: 'SEO SaaS Company',

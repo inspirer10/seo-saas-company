@@ -39,7 +39,7 @@ function FAQ() {
 
     return (
         <section className='faq_section' id='faq'>
-            <h2>FAQ</h2>
+            <h2>FAQs</h2>
             <p className='subHeading'>
                 Discover clear answers to the questions we’re asked most often
                 about our branding and web development solutions

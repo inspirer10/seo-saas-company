@@ -1,5 +1,5 @@
 .faq_section {
-    padding: 7.5rem 0;
+    padding: 7.5rem 0 5rem;
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -39,15 +39,16 @@
             transition: 0.325s ease;
             transition-delay: 0.05s;
             &:hover {
-                border-color: rgb(85, 85, 85);
-                border-color: #ff7354;
+                border-color: rgb(115, 115, 115);
             }
-            &:active {
+            &:active,
+            &:focus {
                 transition: 0.025s ease;
-                border-color: #ff4920;
+                border-color: #ff7354;
             }
             &.open {
                 box-shadow: 0 4px 28px rgba(0, 0, 0, 0.13);
+                border-color: #ff4920;
                 .faq-question .faq-icon {
                     transform: rotate(45deg);
                     color: #ff4920;
