@@ -104,3 +104,11 @@ nav {
         padding-bottom: 13px;
     }
 }
+
+@media screen and (max-width: 1285px) {
+    nav {
+        max-width: 950px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}

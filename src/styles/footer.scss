@@ -168,3 +168,17 @@ footer {
         width: 87.5%;
     }
 }
+
+@media screen and (max-width: 1370px) {
+    footer .footer-container,
+    footer article {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    footer .footer-container,
+    footer article {
+        width: 92.5%;
+    }
+}

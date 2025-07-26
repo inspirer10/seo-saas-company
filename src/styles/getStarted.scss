@@ -124,3 +124,25 @@
         width: 85%;
     }
 }
+
+@media screen and (max-width: 1370px) {
+    .getStarted_section {
+        width: 87.5%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .getStarted_section {
+        width: 87.5%;
+        h2 {
+            line-height: 1.05;
+            margin: 2rem 0 0.25rem;
+        }
+        .subHeading {
+            width: 60%;
+        }
+        .cta-wrapper {
+            margin-top: 3rem;
+        }
+    }
+}

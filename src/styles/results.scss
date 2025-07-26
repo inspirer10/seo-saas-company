@@ -190,3 +190,24 @@
         width: 70%;
     }
 }
+
+@media screen and (max-width: 1370px) {
+    .results_section main {
+        min-width: 1270px;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .results_section {
+        width: 96%;
+        .subHeading {
+            width: 55%;
+        }
+        main {
+            min-width: unset;
+            .card {
+                width: 32%;
+            }
+        }
+    }
+}

@@ -185,3 +185,48 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 1370px) {
+    header {
+        .overHeading {
+            margin-top: 5rem;
+        }
+        .partners-container {
+            margin-top: 3.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    header {
+        .overHeading {
+            margin-top: 5rem;
+            img {
+                height: 45px;
+                width: 45px;
+            }
+        }
+        h1 {
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+            font-size: 5.5rem;
+        }
+        .subHeading {
+            width: 50%;
+        }
+        .partners-container {
+            margin-top: 2.75rem;
+            p {
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+            .logos-wrapper {
+                margin-top: 1.5rem;
+                gap: 5.25rem;
+                img {
+                    height: 4.25vh;
+                }
+            }
+        }
+    }
+}

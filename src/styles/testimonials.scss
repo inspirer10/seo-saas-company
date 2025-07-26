@@ -127,3 +127,19 @@
         width: 87.5%;
     }
 }
+
+@media screen and (max-width: 1370px) {
+    .testimonials_section .testimonials-container .card {
+        aspect-ratio: 1/0.7;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .testimonials_section .testimonials-container {
+        width: 90%;
+        .card {
+            aspect-ratio: 1/0.72;
+            padding: 2rem 2rem 2.25rem;
+        }
+    }
+}
