@@ -55,7 +55,7 @@ header {
         font-size: 6rem;
         font-weight: 500;
         letter-spacing: -1.5px;
-        line-height: 1.15;
+        line-height: 1.125;
         margin: 1.5rem 0 1rem;
         span {
             font-family: "Instrument Serif", serif;
@@ -64,7 +64,7 @@ header {
         }
     }
     .subHeading {
-        font-size: 18px;
+        font-size: 20px;
         color: rgb(145, 145, 145);
         color: rgb(185, 185, 185);
         display: flex;
@@ -82,42 +82,106 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        button {
+        .book-button {
             font-family: 'Geist', sans-serif;
             line-height: 1;
             font-size: 18px;
             font-weight: 400;
             color: #fff;
-            background: linear-gradient(90deg, #ff6542 0%, #f85747 100%);
-            padding: 16px 2.5rem;
+            background: #ff6542;
+            padding: 16px 3rem;
             border: none;
             border-radius: 14px;
             box-shadow: 0 1px 10px rgba(255, 101, 66, 0.2);
             outline: 3px solid rgba(255, 151, 91, 0.3);
             cursor: pointer;
             transition: 0.3s ease;
+            transition-delay: 0.05s;
             &:hover {
-                background: linear-gradient(90deg, #f85747 0%, #ff6542 100%);
+                background: #f85747;
                 box-shadow: 0 4px 16px rgba(255, 101, 66, 0.32);
                 outline: 3px solid rgba(255, 151, 91, 0.15);
             }
-            &.success-button {
-                background: rgba(0, 0, 0, 0.6);
-                outline: 3px solid rgba(0, 0, 0, 0.2) !important;
-                backdrop-filter: blur(5px);
-                outline: none;
-                box-shadow: none;
+        }
+        .success-button {
+            background: rgba(0, 0, 0, 0.675);
+            outline: 3px solid rgba(0, 0, 0, 0.225);
+            backdrop-filter: blur(5px);
+            font-family: 'Geist', sans-serif;
+            line-height: 1;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            padding: 16px 2.25rem;
+            border: none;
+            border-radius: 14px;
+            box-shadow: 0 1px 10px rgba(255, 101, 66, 0.2);
+            cursor: pointer;
+            transition: 0.3s ease;
+            transition-delay: 0.05s;
+            &:hover {
+                background: rgba(0, 0, 0, 0.875);
+                outline: 3px solid rgba(0, 0, 0, 0.375);
+                backdrop-filter: blur(10px);
             }
         }
     }
     .partners-container {
         margin-top: 5rem;
+        text-align: center;
         p {
-            color: rgb(165, 165, 165);
+            color: rgb(200, 200, 200);
             font-family: 'Geist', sans-serif;
             line-height: 1;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 500;
+            letter-spacing: 0.25px;
+        }
+        .logos-wrapper {
+            margin-top: 1.75rem;
+            display: flex;
+            flex-direction: row;
+            gap: 5.75rem;
+            img {
+                aspect-ratio: 2/1;
+                height: 4.75vh;
+                width: auto;
+                overflow: visible;
+                object-fit: cover;
+                filter: brightness(0) invert(1);
+                transition: .25s ease;
+                transition-delay: 0.075s;
+                &:hover {
+                    transform: translateY(-6px);
+                    //filter: brightness(100%) invert(0);
+                    transition: .475s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    header {
+        .overHeading {
+            margin-top: 4rem;
+        }
+        h1 {
+            margin-top: 0.5rem;
+        }
+        .subHeading {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    header {
+        .overHeading {
+            margin-top: 4rem;
+        }
+        .subHeading {
+            width: 47.5%;
         }
     }
 }

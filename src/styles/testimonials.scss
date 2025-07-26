@@ -34,9 +34,9 @@
         }
     }
     .testimonials-container {
-        margin-top: 3rem;
         width: 70%;
         margin: 0 auto;
+        margin-top: 2.5rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -110,5 +110,20 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .testimonials_section .testimonials-container {
+        width: 80%;
+        .card {
+            aspect-ratio: 1/0.675;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .testimonials_section .testimonials-container {
+        width: 87.5%;
     }
 }

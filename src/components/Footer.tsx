@@ -23,17 +23,17 @@ function Footer() {
 
                 <div className='wrapper'>
                     <h5>Company</h5>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Services</p>
-                    <p>Contact</p>
+                    <p className='footer-link'>Home</p>
+                    <p className='footer-link'>About</p>
+                    <p className='footer-link'>Services</p>
+                    <p className='footer-link'>Contact</p>
                 </div>
                 <div className='wrapper'>
                     <h5>Services</h5>
-                    <p>Paid Ads</p>
-                    <p>Brand Strategy</p>
-                    <p>Web Design</p>
-                    <p>SEO optimazation</p>
+                    <p className='footer-link'>Paid Ads</p>
+                    <p className='footer-link'>Brand Strategy</p>
+                    <p className='footer-link'>Web Design</p>
+                    <p className='footer-link'>SEO optimazation</p>
                 </div>
                 <div className='wrapper'>
                     <div className='media-wrapper'>
@@ -50,6 +50,15 @@ function Footer() {
                     </div>
                 </div>
             </main>
+
+            <article>
+                <p>©2025 SEO SaaS. All rights reserved.</p>
+                <aside>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Cookies Settings</p>
+                </aside>
+            </article>
         </footer>
     );
 }

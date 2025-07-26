@@ -141,3 +141,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1550px) {
+    .pricing_section {
+        width: 80%;
+        .subHeading {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .pricing_section {
+        width: 85%;
+        .subHeading {
+            width: 45%;
+        }
+    }
+}

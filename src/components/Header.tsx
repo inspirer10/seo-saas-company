@@ -2,6 +2,42 @@ import React from 'react';
 import Image from 'next/image';
 
 function Header() {
+    interface LogoImage {
+        alt: string;
+        img: string;
+    }
+
+    const logosData: LogoImage[] = [
+        {
+            alt: 'IBM logo',
+            img: '/ibm.png',
+        },
+        {
+            alt: 'Visa logo',
+            img: '/visa.png',
+        },
+        {
+            alt: 'H&M logo',
+            img: '/hm.png',
+        },
+        {
+            alt: 'Audi logo',
+            img: '/audi.png',
+        },
+        {
+            alt: 'PGE logo',
+            img: '/pge.png',
+        },
+        {
+            alt: 'Orlen logo',
+            img: '/orlen.png',
+        },
+        {
+            alt: 'Uber logo',
+            img: '/uber.png',
+        },
+    ];
+
     return (
         <header>
             <div className='overHeading'>
@@ -44,7 +80,7 @@ function Header() {
             </p>
 
             <div className='buttons-wrapper'>
-                <button>Book a Call</button>
+                <button className='book-button'>Book a Call</button>
                 <button className='success-button'>
                     See our Success Stores
                 </button>
@@ -52,6 +88,18 @@ function Header() {
 
             <div className='partners-container'>
                 <p>You are in good hands:</p>
+
+                <div className='logos-wrapper'>
+                    {logosData.map(({ alt, img }, idx) => (
+                        <Image
+                            height={50}
+                            width={100}
+                            src={img}
+                            alt={alt}
+                            key={idx}
+                        />
+                    ))}
+                </div>
             </div>
         </header>
     );

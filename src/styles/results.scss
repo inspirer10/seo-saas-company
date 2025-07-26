@@ -170,3 +170,23 @@
         }
     }
 }
+
+@media screen and (max-width: 1550px) {
+    .results_section .subHeading {
+        width: 65%;
+    }
+    .results_section {
+        h2 {
+            margin-bottom: 0.25rem;
+        }
+        main {
+            margin-top: 3.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .results_section .subHeading {
+        width: 70%;
+    }
+}

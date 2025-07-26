@@ -105,3 +105,28 @@
         }
     }
 }
+
+@media screen and (max-width: 1550px) {
+    .faq_section {
+        width: 80%;
+        .subHeading {
+            width: 60%;
+        }
+        .faqs-container {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .faq_section {
+        width: 82.5%;
+        .faqs-container {
+            width: 87.5%;
+            .faq-item .faq-answer {
+                font-size: 17px;
+                width: 90%;
+            }
+        }
+    }
+}
