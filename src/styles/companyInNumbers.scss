@@ -1,0 +1,147 @@
+.numbers_section {
+    padding: 7.5rem 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .overHeading {
+        color: rgb(150, 150, 150);
+        font-family: 'Geist', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 0.5rem 1.25rem;
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: .275s ease;
+        transition-delay: 0.075s;
+        &:hover {
+            background-color: rgb(115, 115, 115);
+            color: #FFF;
+        }
+    }
+    h2 {
+        margin: 1rem 0 1rem;
+        font-size: 5rem;
+        font-weight: 500;
+        letter-spacing: -0.75px;
+        text-align: center;
+        line-height: 1.1;
+        text-wrap: balance;
+        width: 75%;
+        span {
+            font-family: "Instrument Serif", serif;
+            font-style: italic;
+            letter-spacing: 0.25px;
+        }
+    }
+    article {
+        margin-top: 3rem;
+        width: 95%;
+        width: 90%;
+        //max-width: 1100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        img {
+            border-radius: 20px;
+            position: relative;
+            width: 32.5%;
+            height: 30vh;
+            //aspect-ratio: 1/0.8;
+            object-fit: cover;
+        }
+        .cards-wrapper {
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            .position {
+                position: relative;
+                background-color: rgb(15, 15, 15);
+                padding: 1.75rem 2rem;
+                width: 47.5%;
+                border: 1px solid rgb(45, 45, 45);
+                border-radius: 16px;
+                height: 30vh;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-direction: column;
+                will-change: transform;
+                transition: .3s ease;
+                transition-delay: 0.05s;
+                //outline: 2px solid rgba(255, 255, 255, 0.2);
+                &:hover {
+                    background-color: rgb(18, 18, 18);
+                    border-color: rgb(95, 95, 95);
+                    transform: translateY(-4px);
+                    .description {
+                        color: rgb(200, 200, 200);
+                    }
+                }
+                .test {
+                    font-family: "Geist", sans-serif;
+                    position: absolute;
+                    top: 1.25rem;
+                    right: 1.25rem;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: rgb(85, 85, 85);
+                }
+                h3 {
+                    font-size: 4.5rem;
+                    font-weight: 600;
+                    span {
+                        color: rgb(255, 85, 25);
+                    }
+                }
+                .description {
+                    font-family: "Geist", sans-serif;
+                    color: rgb(125, 125, 125);
+                    width: 65%;
+                    transition: .275s ease;
+                    transition-delay: 0.05s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .numbers_section {
+        width: 90%;
+        article .cards-wrapper .position .description {
+            width: 77.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .numbers_section {
+        width: 95%;
+        article .cards-wrapper .position .description {
+            width: 77.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .numbers_section {
+        article .cards-wrapper {
+            .position {
+                height: 35vh;
+                .description {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .numbers_section article img {
+        height: 35vh;
+    }
+}

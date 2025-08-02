@@ -8,12 +8,14 @@ import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import CompanyInNumbers from '@/components/CompanyInNumbers';
 
 export default function Home() {
     return (
         <>
             <Navbar />
             <Header />
+            <CompanyInNumbers />
             <Results />
             <Services />
             <GetStarted />

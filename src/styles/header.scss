@@ -101,6 +101,7 @@ header {
                 background: #f85747;
                 box-shadow: 0 4px 16px rgba(255, 101, 66, 0.32);
                 outline: 3px solid rgba(255, 151, 91, 0.15);
+                transform: translateY(-3px);
             }
         }
         .success-button {
@@ -123,6 +124,7 @@ header {
                 background: rgba(0, 0, 0, 0.875);
                 outline: 3px solid rgba(0, 0, 0, 0.375);
                 backdrop-filter: blur(10px);
+                transform: translateY(-3px);
             }
         }
     }

@@ -8,6 +8,7 @@ import '../styles/services.scss';
 import '../styles/getStarted.scss';
 import '../styles/pricing.scss';
 import '../styles/testimonials.scss';
+import '../styles/companyInNumbers.scss';
 import '../styles/Faq.scss';
 import '../styles/footer.scss';
 

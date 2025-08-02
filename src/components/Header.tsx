@@ -10,7 +10,7 @@ function Header() {
     const logosData: LogoImage[] = [
         {
             alt: 'IBM logo',
-            img: '/ibm.png',
+            img: '/IBM.png',
         },
         {
             alt: 'Visa logo',
