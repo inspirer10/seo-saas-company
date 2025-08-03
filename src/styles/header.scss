@@ -232,3 +232,55 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    header {
+        padding: 5rem 0;
+        .overHeading {
+            margin-top: 0rem;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 0.25px;
+            }
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.15;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .subHeading {
+            width: 99%;
+            font-size: 15px;
+        }
+        .buttons-wrapper {
+            margin-top: 2.5rem;
+            width: 100%;
+            flex-direction: column;
+            button {
+                width: 85%;
+                padding: 18px !important;
+            }
+        }
+        .partners-container {
+            margin-top: 3rem;
+            p {
+                font-size: 18px;
+                letter-spacing: 0.25px;
+            }
+            .logos-wrapper {
+                gap: 2.25rem;
+                img {
+                    height: 3.25vh;
+                    &:nth-of-type(2n) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

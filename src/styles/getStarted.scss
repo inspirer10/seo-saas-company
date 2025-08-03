@@ -146,3 +146,35 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    .getStarted_section {
+        width: 97.5%;
+        padding: 3rem 0;
+        .overHeading {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 2.625rem;
+            text-align: center;
+        }
+        .subHeading {
+            margin-top: 0.5rem;
+            width: 100%;
+            font-size: 15px;
+            text-wrap: balance;
+        }
+        .cta-wrapper {
+            width: 100%;
+            flex-direction: column-reverse;
+            .name {
+                letter-spacing: 0.75px !important;
+                text-align: center !important;
+                font-size: 20px !important;
+            }
+            button {
+                width: 85%;
+            }
+        }
+    }
+}

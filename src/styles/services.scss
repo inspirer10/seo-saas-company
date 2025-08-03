@@ -56,19 +56,20 @@
             border-radius: 18px;
             margin-bottom: 1.5rem;
             will-change: transform;
-            transition: .225s ease;
-            transition-delay: .075s;
+            transition: .275s ease;
+            transition-delay: .05s;
             &:hover {
                 transform: translateY(-6px);
                 border-color: rgba(255, 255, 255, 0.25);
-                transition: .3s ease;
+                transition: .325s ease;
+                transition-delay: .05s;
                 .icon {
                     color: rgba(255, 90, 57, 0.7);
                 }
             }
             &:focus,
             &:active {
-                transition: .05s ease;
+                transition: .1s ease;
                 border-color: rgba(255, 90, 57, 0.5);
             }
             .icon {
@@ -76,6 +77,7 @@
                 color: rgb(185, 185, 185);
                 cursor: pointer;
                 transition: .3s ease;
+                transition-delay: .05s;
             }
             h4 {
                 margin: 1rem 0;
@@ -129,6 +131,7 @@
 
 @media screen and (max-width: 650px) {
     .services_section {
+        padding-top: 6rem;
         padding-bottom: 2.5rem;
         .overHeading {
             font-size: 14px;
@@ -153,6 +156,10 @@
                 justify-content: center;
                 flex-direction: column;
                 margin-bottom: 1rem;
+                &:focus,
+                &:active {
+                    transition: .275s ease;
+                }
                 .icon {
                     display: flex;
                     align-items: center;

@@ -196,12 +196,15 @@ footer {
                 text-align: center;
                 align-items: center;
                 width: 90%;
-                margin-top: 1.75rem;
+                margin-top: 2rem;
                 .logo-wrapper {
                     justify-content: center;
                 }
                 .address {
                     margin: 1.25rem 0 1.5rem;
+                    br {
+                        display: none;
+                    }
                 }
                 button {
                     width: 95%;
@@ -209,6 +212,7 @@ footer {
                 }
                 h5 {
                     letter-spacing: 0.5px;
+                    margin-bottom: 0.25rem;
                 }
                 .footer-link {
                     margin: 2px 0;
@@ -217,7 +221,7 @@ footer {
                     word-spacing: 1.5px;
                 }
                 .media-wrapper {
-                    width: 90%;
+                    width: 95%;
                 }
             }
         }

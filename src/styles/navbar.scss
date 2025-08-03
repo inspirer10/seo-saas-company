@@ -112,3 +112,36 @@ nav {
         padding-bottom: 12px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    nav {
+        max-width: unset;
+        width: 97.5%;
+        padding: 10px 8px;
+        flex-direction: column;
+        border-radius: 18px;
+        .logo-wrapper {
+            margin-bottom: 0.75rem;
+            .logo-icon {
+                font-size: 26px;
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+        .links-wrapper {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            gap: unset;
+            justify-content: space-between;
+            a {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        button {
+            display: none;
+        }
+    }
+}

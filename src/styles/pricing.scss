@@ -187,7 +187,8 @@
 
 @media screen and (max-width: 650px) {
     .pricing_section {
-        width: 95%;
+        width: 97.5%;
+        padding-top: 6rem;
         padding-bottom: 0rem;
         .overHeading {
             font-size: 14px;
@@ -208,11 +209,16 @@
                 width: 100%;
                 padding: 1.25rem 1rem 1.75rem;
                 margin-bottom: 1rem;
-                aspect-ratio: 1 / 1.45;
+                aspect-ratio: 1 / 1.4;
                 .type {
-                    min-width: 33%;
+                    min-width: 40%;
                     text-align: center;
                     text-transform: uppercase;
+                }
+                .price {
+                    font-size: 3.75rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
                 }
             }
         }
