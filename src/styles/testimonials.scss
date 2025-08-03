@@ -143,3 +143,46 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    .testimonials_section {
+        padding-bottom: 0rem;
+        .overHeading {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
+        }
+        .testimonials-container {
+            width: 97.5%;
+            margin-top: 1.75rem;
+            .card {
+                width: 49%;
+                padding: 1.25rem 8px;
+                aspect-ratio: 1/1.4;
+                margin-bottom: 1rem;
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .person-wrapper {
+                    margin-top: 1.25rem;
+                    gap: 10px;
+                    img {
+                        width: 42.5px;
+                        height: 42.5px;
+                    }
+                    .details-wrapper {
+                        .name {
+                            font-size: 15px;
+                        }
+                        .username {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -38,6 +38,10 @@ function CompanyInNumbers() {
                 More than a <span>Service</span>. A strategic{' '}
                 <span>SEO Partner</span>.
             </h2>
+            <p className='subHeading'>
+                We empower businesses to drive more traffic, rank higher on
+                Google, and achieve lasting online success.
+            </p>
 
             <article>
                 <Image

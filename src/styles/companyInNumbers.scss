@@ -1,5 +1,5 @@
 .numbers_section {
-    padding: 7.5rem 0;
+    padding: 9rem 0;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -35,6 +35,14 @@
             font-style: italic;
             letter-spacing: 0.25px;
         }
+    }
+    .subHeading {
+        font-size: 20px;
+        font-weight: 300;
+        color: rgb(185, 185, 185);
+        width: 42.5%;
+        text-align: center;
+        line-height: 1.5;
     }
     article {
         margin-top: 3rem;
@@ -118,6 +126,9 @@
         article .cards-wrapper .position .description {
             width: 77.5%;
         }
+        .subHeading {
+            width: 47.5%;
+        }
     }
 }
 
@@ -126,6 +137,9 @@
         width: 95%;
         article .cards-wrapper .position .description {
             width: 77.5%;
+        }
+        .subHeading {
+            width: 47.5%;
         }
     }
 }
@@ -140,8 +154,83 @@
                 }
             }
         }
+        .subHeading {
+            width: 50%;
+        }
     }
     .numbers_section article img {
         height: 35vh;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .numbers_section {
+        width: 97.5%;
+        article .cards-wrapper {
+            .position {
+                height: 37.5vh;
+                .description {
+                    width: 85%;
+                }
+            }
+        }
+        .subHeading {
+            width: 52.5%;
+        }
+    }
+    .numbers_section article img {
+        height: 37.5vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .numbers_section {
+        width: 100%;
+        padding-bottom: 0rem;
+        .overHeading {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 2.625rem;
+            text-align: center;
+            width: 95%;
+        }
+        .subHeading {
+            width: 98.5%;
+            font-size: 14px;
+            text-wrap: balance;
+        }
+        article {
+            width: 97.5%;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            .cards-wrapper {
+                width: 100%;
+                gap: 0.5rem;
+                .position {
+                    width: 48.5%;
+                    margin-bottom: 0.5rem;
+                    padding: 1.5rem 0.5rem;
+                    height: 27.5vh;
+                    .test {
+                        top: 0.5rem;
+                        right: 0.5rem;
+                        font-size: 12px;
+                    }
+                    h3 {
+                        font-size: 3.25rem;
+                    }
+                    .description {
+                        width: 100%;
+                        font-size: 15px;
+                    }
+                }
+            }
+            img {
+                margin-top: 0.75rem;
+                width: 95%;
+            }
+        }
     }
 }

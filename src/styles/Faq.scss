@@ -142,3 +142,41 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    .faq_section {
+        width: 97.5%;
+        h2 {
+            font-size: 3.5rem;
+        }
+        .subHeading {
+            width: 97.5%;
+            font-size: 15px;
+            text-wrap: balance;
+        }
+        .faqs-container {
+            width: 97.5%;
+            .faq-item {
+                .faq-question {
+                    padding: 1rem 0.75rem;
+                    h3 {
+                        font-size: 15px;
+                        font-weight: 400;
+                        letter-spacing: -0.25px;
+                        line-height: 1.4;
+                    }
+                    .faq-icon {
+                        font-size: 24px;
+                    }
+                }
+                .faq-answer {
+                    width: 100%;
+                    font-size: 14px;
+                    &.open {
+                        padding: 1.25rem 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}

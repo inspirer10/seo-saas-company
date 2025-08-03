@@ -126,3 +126,49 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    .services_section {
+        padding-bottom: 2.5rem;
+        .overHeading {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 2.625rem;
+            text-align: center;
+        }
+        .subHeading {
+            width: 98.5%;
+            font-size: 14px;
+            text-wrap: balance;
+        }
+        .cards-wrapper {
+            min-width: unset;
+            width: 97.5%;
+            .card {
+                padding: 1.25rem 0.5rem;
+                aspect-ratio: 1 / 1.4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 1rem;
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 2.5rem;
+                }
+                h4 {
+                    text-align: center;
+                }
+                p {
+                    width: 97.5%;
+                    font-size: 14px;
+                    text-align: center;
+                    //text-wrap: balance;
+                }
+            }
+        }
+    }
+}
