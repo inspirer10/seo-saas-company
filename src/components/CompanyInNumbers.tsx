@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { PiStarFour } from 'react-icons/pi';
 
 function CompanyInNumbers() {
     interface SeoStat {
@@ -33,7 +34,10 @@ function CompanyInNumbers() {
 
     return (
         <section className='numbers_section' id='numbers'>
-            <p className='overHeading'>COMPANY IN NUMBERS</p>
+            <p className='overHeading'>
+                <PiStarFour className='icon' />
+                COMPANY IN NUMBERS
+            </p>
             <h2>
                 More than a <span>Service</span>. A strategic{' '}
                 <span>SEO Partner</span>.

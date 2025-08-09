@@ -1,4 +1,5 @@
 import React from 'react';
+import { PiStarFour } from 'react-icons/pi';
 
 function Pricing() {
     interface PricingPlan {
@@ -52,7 +53,10 @@ function Pricing() {
 
     return (
         <section className='pricing_section' id='pricing'>
-            <p className='overHeading'>PRICING</p>
+            <p className='overHeading'>
+                <PiStarFour className='icon' />
+                PRICING
+            </p>
             <h2>
                 Transparent <span>Pricing</span>
             </h2>

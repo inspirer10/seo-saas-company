@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { PiStarFour } from 'react-icons/pi';
 
 function Testimonials() {
     interface TestimonialCard {
@@ -78,7 +79,10 @@ function Testimonials() {
 
     return (
         <section className='testimonials_section' id='testimonials'>
-            <p className='overHeading'>TESTIMONIALS</p>
+            <p className='overHeading'>
+                <PiStarFour className='icon' />
+                TESTIMONIALS
+            </p>
             <h2>
                 See What Our <span>Clients</span> <br />
                 Have to Say

@@ -3,6 +3,7 @@ import { IoSettingsOutline, IoLogoWebComponent } from 'react-icons/io5';
 import { TbCloudComputing } from 'react-icons/tb';
 //import { TfiMagnet } from 'react-icons/tfi';
 import { SlMagnet } from 'react-icons/sl';
+import { PiStarFour } from 'react-icons/pi';
 
 function Services() {
     interface SeoFeature {
@@ -41,7 +42,9 @@ function Services() {
 
     return (
         <section className='services_section' id='services'>
-            <p className='overHeading'>SERVICES</p>
+            <p className='overHeading'>
+                <PiStarFour className='icon' /> SERVICES
+            </p>
             <h2>
                 Comprehensive <span>SEO</span> Services
             </h2>

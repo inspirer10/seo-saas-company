@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
+import { PiStarFour } from 'react-icons/pi';
 
 function Results() {
     interface Testimonial {
@@ -37,7 +38,9 @@ function Results() {
 
     return (
         <section className='results_section' id='results'>
-            <p className='overHeading'>RESULTS</p>
+            <p className='overHeading'>
+                <PiStarFour className='icon' /> RESULTS
+            </p>
             <h2>
                 Real <span>Success</span>. Happy Clients.
             </h2>
