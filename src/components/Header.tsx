@@ -45,41 +45,45 @@ function Header() {
             <div className='overHeading'>
                 <Image
                     src={'/image1.jpg'}
-                    height={75}
-                    width={75}
-                    quality={100}
+                    height={70}
+                    width={70}
+                    quality={85}
+                    priority={true}
                     alt='user avatar'
                 />
                 <Image
                     src={'/image2.jpg'}
-                    height={75}
-                    width={75}
-                    quality={100}
+                    height={70}
+                    width={70}
+                    quality={85}
+                    priority={true}
                     alt='user avatar'
                 />
                 <Image
                     src={'/image3.jpg'}
-                    height={75}
-                    width={75}
-                    quality={100}
+                    height={70}
+                    width={70}
+                    quality={85}
+                    priority={true}
                     alt='user avatar'
                 />
                 <Image
                     src={'/image4.jpg'}
-                    height={75}
-                    width={75}
-                    quality={100}
+                    height={70}
+                    width={70}
+                    quality={85}
+                    priority={true}
                     alt='user avatar'
                 />
                 <p>300+ happy clients</p>
             </div>
 
-            <Heading delay={0}>
+            <Heading delay={1.625}>
                 Winning <span>SEO</span> for <br /> Online Success
             </Heading>
 
             <SubHeading
-                delay={0}
+                delay={1.75}
                 text='Drive more traffic, rank higher on Google, and grow your
                 business with expert SEO strategics that deliver real resutls.'
             />
@@ -97,11 +101,13 @@ function Header() {
                 <div className='logos-wrapper'>
                     {logosData.map(({ alt, img }, idx) => (
                         <Image
+                            priority={true}
                             height={50}
                             width={100}
+                            quality={70}
+                            key={idx}
                             src={img}
                             alt={alt}
-                            key={idx}
                         />
                     ))}
                 </div>

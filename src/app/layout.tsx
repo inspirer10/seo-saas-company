@@ -11,6 +11,7 @@ import '../styles/testimonials.scss';
 import '../styles/companyInNumbers.scss';
 import '../styles/Faq.scss';
 import '../styles/footer.scss';
+import IntroScreen from '@/components/IntroScreen';
 
 export const metadata: Metadata = {
     title: 'SEO SaaS Company',
@@ -25,7 +26,10 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <LenisProvider />
-            <body>{children}</body>
+            <body>
+                <IntroScreen />
+                {children}
+            </body>
         </html>
     );
 }
