@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import SubHeading from './SubHeading';
+import Heading from './Heading';
 
 function Header() {
     interface LogoImage {
@@ -71,13 +73,16 @@ function Header() {
                 />
                 <p>300+ happy clients</p>
             </div>
-            <h1>
+
+            <Heading delay={0}>
                 Winning <span>SEO</span> for <br /> Online Success
-            </h1>
-            <p className='subHeading'>
-                Drive more traffic, rank higher on Google, and grow your
-                business with expert SEO strategics that deliver real resutls.
-            </p>
+            </Heading>
+
+            <SubHeading
+                delay={0}
+                text='Drive more traffic, rank higher on Google, and grow your
+                business with expert SEO strategics that deliver real resutls.'
+            />
 
             <div className='buttons-wrapper'>
                 <button className='book-button'>Book a Call</button>

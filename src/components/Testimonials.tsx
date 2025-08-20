@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import { PiStarFour } from 'react-icons/pi';
+import Heading from './Heading';
+import OverHeading from './OverHeading';
 
 function Testimonials() {
     interface TestimonialCard {
@@ -79,14 +81,15 @@ function Testimonials() {
 
     return (
         <section className='testimonials_section' id='testimonials'>
-            <p className='overHeading'>
+            <OverHeading>
                 <PiStarFour className='icon' />
                 TESTIMONIALS
-            </p>
-            <h2>
+            </OverHeading>
+
+            <Heading>
                 See What Our <span>Clients</span> <br />
                 Have to Say
-            </h2>
+            </Heading>
 
             <main className='testimonials-container'>
                 {testimonialCards.map(({ id, text, image, name, username }) => (

@@ -18,8 +18,7 @@
         padding: 0.5rem 1.25rem;
         border-radius: 50px;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        transition: .275s ease;
-        transition-delay: 0.075s;
+        transition: background 0.275s ease 0.075s, color 0.275s ease 0.075s;
         .icon {
             color: rgb(255, 90, 57);
         }

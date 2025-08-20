@@ -1,5 +1,8 @@
 import React from 'react';
 import { PiStarFour } from 'react-icons/pi';
+import OverHeading from './OverHeading';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
 
 function Pricing() {
     interface PricingPlan {
@@ -53,17 +56,19 @@ function Pricing() {
 
     return (
         <section className='pricing_section' id='pricing'>
-            <p className='overHeading'>
+            <OverHeading>
                 <PiStarFour className='icon' />
                 PRICING
-            </p>
-            <h2>
+            </OverHeading>
+
+            <Heading>
                 Transparent <span>Pricing</span>
-            </h2>
-            <p className='subHeading'>
-                Explore our pricing options below and choose the plan that best
-                fits your needs. No hidden fees...
-            </p>
+            </Heading>
+
+            <SubHeading
+                text='Explore our pricing options below and choose the plan that best
+                fits your needs. No hidden fees...'
+            />
 
             <main>
                 {pricingPlans.map(

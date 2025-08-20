@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import { PiStarFour } from 'react-icons/pi';
+import OverHeading from './OverHeading';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
 
 function CompanyInNumbers() {
     interface SeoStat {
@@ -34,18 +37,20 @@ function CompanyInNumbers() {
 
     return (
         <section className='numbers_section' id='numbers'>
-            <p className='overHeading'>
+            <OverHeading>
                 <PiStarFour className='icon' />
                 COMPANY IN NUMBERS
-            </p>
-            <h2>
+            </OverHeading>
+
+            <Heading>
                 More than a <span>Service</span>. A strategic{' '}
                 <span>SEO Partner</span>.
-            </h2>
-            <p className='subHeading'>
-                We empower businesses to drive more traffic, rank higher on
-                Google, and achieve lasting online success.
-            </p>
+            </Heading>
+
+            <SubHeading
+                text='We empower businesses to drive more traffic, rank higher on
+                Google, and achieve lasting online success.'
+            />
 
             <article>
                 <Image

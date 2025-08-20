@@ -2,6 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 import { PiStarFour } from 'react-icons/pi';
+import SubHeading from './SubHeading';
+import Heading from './Heading';
+import OverHeading from './OverHeading';
 
 function Results() {
     interface Testimonial {
@@ -38,16 +41,19 @@ function Results() {
 
     return (
         <section className='results_section' id='results'>
-            <p className='overHeading'>
-                <PiStarFour className='icon' /> RESULTS
-            </p>
-            <h2>
+            <OverHeading>
+                <PiStarFour className='icon' />
+                RESULTS
+            </OverHeading>
+
+            <Heading>
                 Real <span>Success</span>. Happy Clients.
-            </h2>
-            <p className='subHeading'>
-                Our SEO strategies help businesses grow. See how our clients
-                achieved higher rankings, more traffic, and increased revenue!
-            </p>
+            </Heading>
+
+            <SubHeading
+                text='Our SEO strategies help businesses grow. See how our clients
+                achieved higher rankings, more traffic, and increased revenue!'
+            />
 
             <main>
                 {testimonials.map(({ id, name, company, text, img }) => (

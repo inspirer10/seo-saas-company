@@ -1,19 +1,24 @@
 import Image from 'next/image';
 import React from 'react';
+import OverHeading from './OverHeading';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
 
 function GetStarted() {
     return (
         <section className='getStarted_section'>
-            <p className='overHeading'>GET STARTED</p>
-            <h2>
+            <OverHeading>GET STARTED</OverHeading>
+
+            <Heading>
                 Ready to scale your <br />
                 brand to <span>new heights?</span>
-            </h2>
-            <p className='subHeading'>
-                If you want to achieve ground-breaking growth with increased
+            </Heading>
+
+            <SubHeading
+                text='If you want to achieve ground-breaking growth with increased
                 sales and profitability with paid ads, then you’re in the right
-                place.
-            </p>
+                place.'
+            />
 
             <div className='cta-wrapper'>
                 <button>Book a Call</button>

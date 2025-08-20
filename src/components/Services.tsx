@@ -4,6 +4,9 @@ import { TbCloudComputing } from 'react-icons/tb';
 //import { TfiMagnet } from 'react-icons/tfi';
 import { SlMagnet } from 'react-icons/sl';
 import { PiStarFour } from 'react-icons/pi';
+import OverHeading from './OverHeading';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
 
 function Services() {
     interface SeoFeature {
@@ -42,16 +45,19 @@ function Services() {
 
     return (
         <section className='services_section' id='services'>
-            <p className='overHeading'>
-                <PiStarFour className='icon' /> SERVICES
-            </p>
-            <h2>
+            <OverHeading>
+                <PiStarFour className='icon' />
+                SERVICES
+            </OverHeading>
+
+            <Heading>
                 Comprehensive <span>SEO</span> Services
-            </h2>
-            <p className='subHeading'>
-                Expert SEO solutions tailored to help your business grow, drive
-                more traffic, and achieve long-term success.
-            </p>
+            </Heading>
+
+            <SubHeading
+                text='Expert SEO solutions tailored to help your business grow, drive
+                more traffic, and achieve long-term success.'
+            />
 
             <main className='cards-wrapper'>
                 {seoFeatures.map(({ id, text, name, icon }) => (

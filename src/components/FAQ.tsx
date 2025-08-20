@@ -1,5 +1,7 @@
 import React from 'react';
 import FaqItem from './FaqItem';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
 
 function FAQ() {
     interface faqsDataTypes {
@@ -39,11 +41,11 @@ function FAQ() {
 
     return (
         <section className='faq_section' id='faq'>
-            <h2>FAQs</h2>
-            <p className='subHeading'>
-                Discover clear answers to the questions we’re asked most often
-                about our branding and web development solutions
-            </p>
+            <Heading>FAQs</Heading>
+            <SubHeading
+                text='  Discover clear answers to the questions we’re asked most often
+                about our branding and web development solutions'
+            />
 
             <main className='faqs-container'>
                 {faqsData.map(({ id, question, answer }) => (
