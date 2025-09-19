@@ -8,41 +8,41 @@ import OverHeading from './OverHeading';
 import Heading from './Heading';
 import SubHeading from './SubHeading';
 
+interface SeoFeature {
+    id: number;
+    name: string;
+    icon: React.ReactNode;
+    text: string;
+}
+
+const seoFeatures: SeoFeature[] = [
+    {
+        id: 1,
+        name: 'On-Page SEO',
+        icon: <IoLogoWebComponent />,
+        text: 'Optimize your website’s structure, content, and keywords to improve search engine rankings.',
+    },
+    {
+        id: 2,
+        name: 'Technical SEO',
+        icon: <IoSettingsOutline />,
+        text: 'Enhance site speed, mobile-friendliness, and indexing to ensure seamless performance.',
+    },
+    {
+        id: 3,
+        name: 'Link Building',
+        icon: <SlMagnet />,
+        text: 'Gain high-quality backlinks to boost your website’s authority and credibility.',
+    },
+    {
+        id: 4,
+        name: 'Local SEO',
+        icon: <TbCloudComputing />,
+        text: 'Get found by local customers with optimized Google My Business and location-based tactics.',
+    },
+];
+
 function Services() {
-    interface SeoFeature {
-        id: number;
-        name: string;
-        icon: React.ReactNode;
-        text: string;
-    }
-
-    const seoFeatures: SeoFeature[] = [
-        {
-            id: 1,
-            name: 'On-Page SEO',
-            icon: <IoLogoWebComponent />,
-            text: 'Optimize your website’s structure, content, and keywords to improve search engine rankings.',
-        },
-        {
-            id: 2,
-            name: 'Technical SEO',
-            icon: <IoSettingsOutline />,
-            text: 'Enhance site speed, mobile-friendliness, and indexing to ensure seamless performance.',
-        },
-        {
-            id: 3,
-            name: 'Link Building',
-            icon: <SlMagnet />,
-            text: 'Gain high-quality backlinks to boost your website’s authority and credibility.',
-        },
-        {
-            id: 4,
-            name: 'Local SEO',
-            icon: <TbCloudComputing />,
-            text: 'Get found by local customers with optimized Google My Business and location-based tactics.',
-        },
-    ];
-
     return (
         <section className='services_section' id='services'>
             <OverHeading>

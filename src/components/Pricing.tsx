@@ -4,56 +4,56 @@ import OverHeading from './OverHeading';
 import Heading from './Heading';
 import SubHeading from './SubHeading';
 
+interface PricingPlan {
+    id: number;
+    type: string;
+    price: string;
+    features: string[];
+    highlight?: boolean;
+}
+
+const pricingPlans: PricingPlan[] = [
+    {
+        id: 1,
+        type: 'Basic',
+        price: '1,200',
+        features: [
+            'Primary and secondary logos',
+            'Full brand guidebook',
+            '2 weeks delivery',
+            'One free color palette suggestion',
+        ],
+    },
+    {
+        id: 2,
+        type: 'Standard',
+        price: '1,700',
+        features: [
+            'Primary and secondary logos',
+            'Full brand guidebook',
+            '2 weeks delivery',
+            'Max 3 revisions',
+            'Figma files',
+            'Editable social media avatar included',
+        ],
+        highlight: true,
+    },
+    {
+        id: 3,
+        type: 'Premium',
+        price: '2,400',
+        features: [
+            'Primary and secondary logos',
+            'Full brand guidebook',
+            '1 week delivery',
+            'Max 4 revisions',
+            'Figma files',
+            'Animated logo included',
+        ],
+    },
+];
+
 function Pricing() {
-    interface PricingPlan {
-        id: number;
-        type: string;
-        price: string;
-        features: string[];
-        highlight?: boolean;
-    }
-
-    const pricingPlans: PricingPlan[] = [
-        {
-            id: 1,
-            type: 'Basic',
-            price: '1,200',
-            features: [
-                'Primary and secondary logos',
-                'Full brand guidebook',
-                '2 weeks delivery',
-                'One free color palette suggestion',
-            ],
-        },
-        {
-            id: 2,
-            type: 'Standard',
-            price: '1,700',
-            features: [
-                'Primary and secondary logos',
-                'Full brand guidebook',
-                '2 weeks delivery',
-                'Max 3 revisions',
-                'Figma files',
-                'Editable social media avatar included',
-            ],
-            highlight: true,
-        },
-        {
-            id: 3,
-            type: 'Premium',
-            price: '2,400',
-            features: [
-                'Primary and secondary logos',
-                'Full brand guidebook',
-                '1 week delivery',
-                'Max 4 revisions',
-                'Figma files',
-                'Animated logo included',
-            ],
-        },
-    ];
-
     return (
         <section className='pricing_section' id='pricing'>
             <OverHeading>

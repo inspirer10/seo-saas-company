@@ -14,12 +14,13 @@ footer {
             display: flex;
             flex-direction: column;
             .logo-wrapper {
+                width: fit-content;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                color: rgb(200, 200, 200);
+                color: rgb(215, 215, 215);
                 cursor: pointer;
-                transition: .3s ease;
+                transition: .275s ease;
                 &:hover {
                     color: rgb(255, 255, 255);
                 }

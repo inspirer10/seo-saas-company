@@ -9,7 +9,7 @@ function Navbar() {
     ) => {
         e.preventDefault();
 
-        // Jeśli jesteśmy  na stronie głównej, przewiń do sekcji
+        //IF na stronie głównej, przewiń do sekcji
         document
             .getElementById(`${section}`)
             ?.scrollIntoView({ behavior: 'smooth' });

@@ -6,39 +6,39 @@ import SubHeading from './SubHeading';
 import Heading from './Heading';
 import OverHeading from './OverHeading';
 
+interface Testimonial {
+    id: number;
+    name: string;
+    company: string;
+    img: string;
+    text: string;
+}
+
+const testimonials: Testimonial[] = [
+    {
+        id: 1,
+        name: 'John Doe',
+        company: 'TechBoost',
+        img: '/image2.jpg',
+        text: 'Thanks to Element’s SEO, we doubled our traffic in 6 months and landed on Google’s first page.',
+    },
+    {
+        id: 2,
+        name: 'Maria Dimitrova',
+        company: 'GreenMarket',
+        img: '/image9.jpg',
+        text: 'After the optimization, we saw a 70% increase in online sales! Working with this team was the best decision for our business.',
+    },
+    {
+        id: 3,
+        name: 'George Kowalski',
+        company: 'AutoPro',
+        img: '/image4.jpg',
+        text: 'From a local business, we became a leader in our niche. SEO optimization brought us more clients and greater visibility.',
+    },
+];
+
 function Results() {
-    interface Testimonial {
-        id: number;
-        name: string;
-        company: string;
-        img: string;
-        text: string;
-    }
-
-    const testimonials: Testimonial[] = [
-        {
-            id: 1,
-            name: 'John Doe',
-            company: 'TechBoost',
-            img: '/image2.jpg',
-            text: 'Thanks to Element’s SEO, we doubled our traffic in 6 months and landed on Google’s first page.',
-        },
-        {
-            id: 2,
-            name: 'Maria Dimitrova',
-            company: 'GreenMarket',
-            img: '/image9.jpg',
-            text: 'After the optimization, we saw a 70% increase in online sales! Working with this team was the best decision for our business.',
-        },
-        {
-            id: 3,
-            name: 'George Kowalski',
-            company: 'AutoPro',
-            img: '/image4.jpg',
-            text: 'From a local business, we became a leader in our niche. SEO optimization brought us more clients and greater visibility.',
-        },
-    ];
-
     return (
         <section className='results_section' id='results'>
             <OverHeading>
@@ -63,7 +63,7 @@ function Results() {
                                 alt='user thumbnail'
                                 src={img}
                                 height={400}
-                                width={400}
+                                width={350}
                             />
                             <div className='player-icon'>
                                 <FaPlay />

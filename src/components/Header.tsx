@@ -3,43 +3,43 @@ import Image from 'next/image';
 import SubHeading from './SubHeading';
 import Heading from './Heading';
 
+interface LogoImage {
+    alt: string;
+    img: string;
+}
+
+const logosData: LogoImage[] = [
+    {
+        alt: 'IBM logo',
+        img: '/IBM.png',
+    },
+    {
+        alt: 'Visa logo',
+        img: '/visa.png',
+    },
+    {
+        alt: 'H&M logo',
+        img: '/hm.png',
+    },
+    {
+        alt: 'Audi logo',
+        img: '/audi.png',
+    },
+    {
+        alt: 'PGE logo',
+        img: '/pge.png',
+    },
+    {
+        alt: 'Orlen logo',
+        img: '/orlen.png',
+    },
+    {
+        alt: 'Uber logo',
+        img: '/uber.png',
+    },
+];
+
 function Header() {
-    interface LogoImage {
-        alt: string;
-        img: string;
-    }
-
-    const logosData: LogoImage[] = [
-        {
-            alt: 'IBM logo',
-            img: '/IBM.png',
-        },
-        {
-            alt: 'Visa logo',
-            img: '/visa.png',
-        },
-        {
-            alt: 'H&M logo',
-            img: '/hm.png',
-        },
-        {
-            alt: 'Audi logo',
-            img: '/audi.png',
-        },
-        {
-            alt: 'PGE logo',
-            img: '/pge.png',
-        },
-        {
-            alt: 'Orlen logo',
-            img: '/orlen.png',
-        },
-        {
-            alt: 'Uber logo',
-            img: '/uber.png',
-        },
-    ];
-
     return (
         <header>
             <div className='overHeading'>
@@ -99,14 +99,14 @@ function Header() {
                 <p>You are in good hands:</p>
 
                 <div className='logos-wrapper'>
-                    {logosData.map(({ alt, img }, idx) => (
+                    {logosData.map(({ alt, img }, index) => (
                         <Image
-                            priority={true}
-                            height={50}
-                            width={100}
-                            quality={70}
-                            key={idx}
+                            key={index}
                             src={img}
+                            height={60}
+                            width={100}
+                            priority={true}
+                            quality={70}
                             alt={alt}
                         />
                     ))}

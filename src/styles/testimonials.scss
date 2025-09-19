@@ -17,12 +17,12 @@
         align-items: center;
         justify-content: center;
         gap: 5px;
-        transition: background 0.275s ease 0.075s, color 0.275s ease 0.075s;
+        transition: background 0.275s ease 0.05s, color 0.275s ease 0.05s;
         .icon {
             color: rgb(246, 77, 0);
         }
         &:hover {
-            background-color: rgb(115, 115, 115);
+            background-color: rgb(85, 85, 85);
             color: #FFF;
         }
     }

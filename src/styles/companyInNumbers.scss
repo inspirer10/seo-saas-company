@@ -18,13 +18,12 @@
         padding: 0.5rem 1.25rem;
         border-radius: 50px;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        transition: background 0.275s ease 0.075s, color 0.275s ease 0.075s;
+        transition: background 0.275s ease 0.05s, color 0.275s ease 0.05s;
         .icon {
-            color: rgb(255, 90, 57);
             color: rgb(246, 77, 0);
         }
         &:hover {
-            background-color: rgb(115, 115, 115);
+            background-color: rgb(85, 85, 85);
             color: #FFF;
         }
     }
@@ -67,6 +66,7 @@
             height: 30vh;
             //aspect-ratio: 1/0.8;
             object-fit: cover;
+            box-shadow: 0px 8px 12px 0px rgba(228, 228, 228, 0.03);
         }
         .cards-wrapper {
             width: 65%;
@@ -87,6 +87,7 @@
                 align-items: flex-start;
                 justify-content: space-between;
                 flex-direction: column;
+                box-shadow: 0px 8px 12px 0px rgba(228, 228, 228, 0.025);
                 will-change: transform;
                 transition: .3s ease;
                 transition-delay: 0.05s;
@@ -95,11 +96,12 @@
                     background-color: rgb(18, 18, 18);
                     border-color: rgb(95, 95, 95);
                     transform: translateY(-4px);
+                    box-shadow: 0px 8px 12px 0px rgba(228, 228, 228, 0.05);
                     .description {
                         color: rgb(200, 200, 200);
                     }
                 }
-                .test {
+                .number {
                     font-family: "Geist", sans-serif;
                     position: absolute;
                     top: 1.25rem;
@@ -221,7 +223,7 @@
                     margin-bottom: 0.5rem;
                     padding: 1.5rem 0.5rem;
                     height: 27.5vh;
-                    .test {
+                    .number {
                         top: 0.5rem;
                         right: 0.5rem;
                         font-size: 12px;
