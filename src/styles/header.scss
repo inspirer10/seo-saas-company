@@ -16,7 +16,7 @@ header {
             height: 50px;
             width: 50px;
             object-fit: cover;
-            outline: 1px solid rgba(255, 255, 255, 0.6);
+            outline: 1px solid rgba(228, 228, 228, 0.7);
             will-change: transform;
             transition: .3s ease;
             transform-origin: center center;
@@ -47,7 +47,7 @@ header {
         p {
             font-family: 'Geist', sans-serif;
             font-size: 20px;
-            color: rgb(225, 225, 225);
+            color: rgb(228, 228, 228);
         }
     }
     h2 {
@@ -66,7 +66,7 @@ header {
     .subHeading {
         font-size: 20px;
         color: rgb(145, 145, 145);
-        color: rgb(185, 185, 185);
+        color: rgb(190, 190, 190);
         display: flex;
         justify-content: center;
         width: 35%;

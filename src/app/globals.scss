@@ -9,10 +9,10 @@ body {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(10, 10, 10);
-    color: rgb(252, 252, 252);
-    font-family: "Instrument Serif", serif;
-    font-family: "Geist", sans-serif;
+    background-color: rgb(11, 11, 11);
+    color: rgb(228, 228, 228);
+    //font-family: "Instrument Serif", serif;
+    //font-family: "Geist", sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
@@ -21,7 +21,7 @@ body {
     padding: 0;
     margin: 0;
     &::selection {
-        background-color: rgb(14, 14, 14);
+        background-color: rgb(16, 16, 16);
         color: rgb(252, 252, 252);
     }
 }
@@ -52,7 +52,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ff4757 100%);
+    background: linear-gradient(135deg, #F64D00 0%, #f7931e 50%, #ff4757 100%);
     display: flex;
     opacity: 1;
     pointer-events: auto;
@@ -82,7 +82,7 @@ img {
             margin: 0 auto 1rem;
             .logoIcon {
                 font-size: clamp(3.5rem, 8vw, 7rem);
-                color: #fff;
+                color: rgb(228, 228, 228);
                 margin: 0 auto 0.5rem;
             }
             .logoText {
@@ -90,7 +90,7 @@ img {
                 font-size: clamp(1.75rem, 5vw, 3.75rem);
                 font-weight: 500;
                 letter-spacing: 0;
-                color: #fff;
+                color: rgb(228, 228, 228);
                 text-align: center;
                 text-wrap: balance;
             }
