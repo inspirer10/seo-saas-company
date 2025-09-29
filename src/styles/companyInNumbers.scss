@@ -88,17 +88,23 @@
                 justify-content: space-between;
                 flex-direction: column;
                 box-shadow: 0px 8px 12px 0px rgba(228, 228, 228, 0.025);
-                will-change: transform;
-                transition: .3s ease;
-                transition-delay: 0.05s;
+                will-change: transform, background-image;
                 //outline: 2px solid rgba(255, 255, 255, 0.2);
+                background-image: radial-gradient(circle closest-corner at 50% 100%, var(--card-glow-1), var(--card-glow-2));
+                background-repeat: no-repeat;
+                transition-property: --card-glow-1, --card-glow-2, background, transform, border-color, box-shadow;
+                transition-delay: 0.05s;
+                transition-duration: .3s;
+                transition-timing-function: ease;
                 &:hover {
+                    --card-glow-1: var(--card-glow-1-hover);
+                    --card-glow-2: var(--card-glow-2-hover);
                     background-color: rgb(18, 18, 18);
                     border-color: rgb(95, 95, 95);
                     transform: translateY(-4px);
                     box-shadow: 0px 8px 12px 0px rgba(228, 228, 228, 0.05);
                     .description {
-                        color: rgb(200, 200, 200);
+                        color: rgb(210, 210, 210);
                     }
                 }
                 .number {
@@ -108,7 +114,7 @@
                     right: 1.25rem;
                     font-size: 15px;
                     font-weight: 500;
-                    color: rgb(85, 85, 85);
+                    color: rgb(95, 95, 95);
                 }
                 h3 {
                     font-size: 4.5rem;
@@ -119,7 +125,7 @@
                 }
                 .description {
                     font-family: "Geist", sans-serif;
-                    color: rgb(125, 125, 125);
+                    color: rgb(135, 135, 135);
                     width: 65%;
                     transition: .275s ease;
                     transition-delay: 0.05s;
