@@ -30,7 +30,7 @@ const seoStats: SeoStat[] = [
     {
         value: 35,
         label: '%',
-        description: 'Avgerage client profit growth increase',
+        description: 'Average client profit growth',
     },
 ];
 
@@ -57,7 +57,6 @@ function CompanyInNumbers() {
                     src={'/people2.jpg'}
                     height={400}
                     width={400}
-                    quality={90}
                     alt='group of people'
                 />
                 <div className='cards-wrapper'>

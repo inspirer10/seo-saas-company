@@ -9,12 +9,14 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import CompanyInNumbers from '@/components/CompanyInNumbers';
+import SeoWorkspace from '@/components/SeoWorkspace';
 
 export default function Home() {
     return (
         <>
             <Navbar />
             <Header />
+            <SeoWorkspace />
             <CompanyInNumbers />
             <Results />
             <Services />

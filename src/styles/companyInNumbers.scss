@@ -7,7 +7,7 @@
     flex-direction: column;
     .overHeading {
         color: rgb(150, 150, 150);
-        font-family: 'Geist', sans-serif;
+        font-family: var(--font-geist), sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 1;
@@ -37,7 +37,7 @@
         text-wrap: balance;
         width: 75%;
         span {
-            font-family: "Instrument Serif", serif;
+            font-family: var(--font-instrument-serif), serif;
             font-style: italic;
             letter-spacing: 0.25px;
         }
@@ -92,7 +92,7 @@
                 //outline: 2px solid rgba(255, 255, 255, 0.2);
                 background-image: radial-gradient(circle closest-corner at 50% 100%, var(--card-glow-1), var(--card-glow-2));
                 background-repeat: no-repeat;
-                transition-property: --card-glow-1, --card-glow-2, background, transform, border-color, box-shadow;
+                transition-property: --card-glow-1, --card-glow-2, background-color, transform, border-color, box-shadow;
                 transition-delay: 0.05s;
                 transition-duration: .3s;
                 transition-timing-function: ease;
@@ -108,7 +108,7 @@
                     }
                 }
                 .number {
-                    font-family: "Geist", sans-serif;
+                    font-family: var(--font-geist), sans-serif;
                     position: absolute;
                     top: 1.25rem;
                     right: 1.25rem;
@@ -124,7 +124,7 @@
                     }
                 }
                 .description {
-                    font-family: "Geist", sans-serif;
+                    font-family: var(--font-geist), sans-serif;
                     color: rgb(135, 135, 135);
                     width: 65%;
                     transition: .275s ease;

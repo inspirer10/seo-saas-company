@@ -33,7 +33,7 @@ function Footer() {
                     <p className='footer-link'>Paid Ads</p>
                     <p className='footer-link'>Brand Strategy</p>
                     <p className='footer-link'>Web Design</p>
-                    <p className='footer-link'>SEO optimazation</p>
+                    <p className='footer-link'>SEO optimization</p>
                 </div>
                 <div className='wrapper'>
                     <div className='media-wrapper'>

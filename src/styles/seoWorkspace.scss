@@ -1,0 +1,373 @@
+.seo-workspace {
+    width: 92%;
+    margin: 0 auto;
+    padding: 8rem 0 8.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .overHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.375rem;
+        padding: 0.5rem 1.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        color: rgb(150, 150, 150);
+        font-family: var(--font-geist), sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1;
+        transition: background 0.275s ease 0.05s, color 0.275s ease 0.05s;
+
+        &:hover {
+            background-color: rgb(85, 85, 85);
+            color: #fff;
+        }
+
+        .icon {
+            color: var(--brand-orange);
+        }
+    }
+
+    h2 {
+        width: 100%;
+        margin: 1rem 0;
+        color: rgb(239, 239, 239);
+        font-family: var(--font-inter), sans-serif;
+        font-size: clamp(3.25rem, 5.25vw, 5.625rem);
+        font-weight: 500;
+        letter-spacing: -0.75px;
+        line-height: 1.1;
+        text-align: center;
+        text-wrap: balance;
+
+        span {
+            background: linear-gradient(100deg, var(--brand-orange), var(--brand-coral), var(--brand-peach));
+            background-clip: text;
+            color: transparent;
+            font-family: var(--font-instrument-serif), serif;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    .subHeading {
+        width: min(820px, 75%);
+        color: rgb(185, 185, 185);
+        font-size: 1.375rem;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .audit-preview {
+        width: min(1400px, 100%);
+        margin-top: 3.5rem;
+    }
+
+    .audit-filters {
+        display: flex;
+        gap: 2.5rem;
+        border-bottom: 1px solid rgb(48, 48, 48);
+
+        button {
+            position: relative;
+            padding: 0 0 1rem;
+            border: 0;
+            background: transparent;
+            color: rgb(145, 145, 145);
+            cursor: pointer;
+            font-family: var(--font-geist), sans-serif;
+            font-size: 1.25rem;
+            transition: color 0.2s ease;
+
+            &:hover,
+            &.is-selected {
+                color: var(--tab-accent, var(--brand-coral));
+            }
+
+            &:nth-child(1) {
+                --tab-accent: var(--brand-orange);
+            }
+
+            &:nth-child(2) {
+                --tab-accent: var(--brand-apricot);
+            }
+
+            &:nth-child(3) {
+                --tab-accent: var(--brand-coral);
+            }
+
+            &.is-selected::after {
+                position: absolute;
+                left: 50%;
+                bottom: -1px;
+                width: 5.8em;
+                height: 2px;
+                transform: translateX(-50%);
+                background: var(--tab-accent, var(--brand-coral));
+                box-shadow: 0 0 12px color-mix(in srgb, var(--tab-accent, var(--brand-coral)) 65%, transparent);
+                content: '';
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--brand-coral);
+                outline-offset: 4px;
+            }
+        }
+    }
+
+    .audit-finding {
+        --finding-accent: var(--brand-orange);
+
+        display: flex;
+        align-items: stretch;
+        gap: 4rem;
+        min-height: 22.5rem;
+        padding: 2.75rem 0 2.5rem;
+        border-bottom: 1px solid rgb(48, 48, 48);
+
+        &[data-category='content'] {
+            --finding-accent: var(--brand-apricot);
+        }
+
+        &[data-category='performance'] {
+            --finding-accent: var(--brand-coral);
+        }
+
+        .finding-label,
+        .affected-pages strong {
+            color: var(--finding-accent);
+        }
+
+        .finding-action {
+            border-color: var(--finding-accent);
+            background: linear-gradient(90deg, color-mix(in srgb, var(--finding-accent) 12%, transparent), transparent 85%);
+        }
+    }
+
+    .finding-copy {
+        min-width: 0;
+        min-height: 17.25rem;
+        flex: 1.2;
+    }
+
+    .finding-label,
+    .affected-pages span,
+    .finding-action span {
+        color: var(--brand-peach);
+        font-family: var(--font-geist), sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.075em;
+    }
+
+    .finding-label span {
+        color: rgb(105, 105, 105);
+    }
+
+    .finding-copy h3 {
+        max-width: 680px;
+        min-height: 7.5rem;
+        margin-top: 1rem;
+        color: rgb(235, 235, 235);
+        font-size: clamp(2.25rem, 3.125vw, 3.25rem);
+        font-weight: 500;
+        letter-spacing: -0.04em;
+        line-height: 1.125;
+        text-wrap: balance;
+    }
+
+    .finding-explanation {
+        max-width: 680px;
+        min-height: 6.5rem;
+        margin-top: 0.875rem;
+        color: rgb(165, 165, 165);
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .finding-detail {
+        min-width: 0;
+        min-height: 17.25rem;
+        display: flex;
+        flex: 0.8;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .affected-pages {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        strong {
+            color: var(--brand-coral);
+            font-family: var(--font-instrument-serif), serif;
+            font-size: 2.75rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1;
+        }
+    }
+
+    .finding-action {
+        padding: 1.125rem 1.25rem 1.125rem 1.5rem;
+        border-left: 2px solid var(--brand-orange);
+
+        p {
+            min-height: 6.75rem;
+            margin-top: 0.625rem;
+            color: rgb(220, 220, 220);
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 92%;
+
+        .audit-finding {
+            gap: 2.5rem;
+            min-height: 24.5rem;
+        }
+
+        .finding-copy,
+        .finding-detail {
+            min-height: 18rem;
+        }
+
+        .finding-copy h3 {
+            min-height: 9rem;
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        width: 90%;
+        padding: 6.5rem 0;
+
+        h2 {
+            width: 100%;
+        }
+
+        .subHeading {
+            width: min(680px, 90%);
+        }
+
+        .audit-preview {
+            margin-top: 2.75rem;
+        }
+
+        .audit-finding {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 1.5rem;
+            min-height: 0;
+            padding: 1.875rem 0;
+        }
+
+        .finding-copy {
+            min-height: 20rem;
+            flex: none;
+        }
+
+        .finding-copy h3 {
+            min-height: 8.5rem;
+        }
+
+        .finding-explanation {
+            min-height: 8.25rem;
+        }
+
+        .finding-detail {
+            min-height: 17rem;
+            flex: none;
+            gap: 1.25rem;
+        }
+
+        .finding-action p {
+            min-height: 6.75rem;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        width: 92%;
+        padding: 5rem 0;
+
+        .overHeading {
+            font-size: 0.875rem;
+        }
+
+        h2 {
+            font-size: clamp(2.75rem, 11vw, 3.5rem);
+        }
+
+        .subHeading {
+            width: 100%;
+            font-size: 1.125rem;
+        }
+
+        .audit-preview {
+            margin-top: 2.25rem;
+        }
+
+        .audit-filters {
+            justify-content: space-between;
+            gap: 0.375rem;
+
+            button {
+                min-width: 0;
+                flex: 1 1 0;
+                padding: 0 0.125rem 0.75rem;
+                font-size: clamp(0.8125rem, 3.75vw, 0.9375rem);
+                text-align: center;
+            }
+        }
+
+        .audit-finding {
+            gap: 1rem;
+            min-height: 34rem;
+            padding: 1.25rem 0;
+        }
+
+        .finding-copy h3 {
+            min-height: 0;
+            margin-top: 0.75rem;
+            font-size: 1.875rem;
+        }
+
+        .finding-explanation {
+            min-height: 0;
+            margin-top: 0.75rem;
+            font-size: 1.0625rem;
+        }
+
+        .finding-copy {
+            width: 100%;
+            min-height: 0;
+        }
+
+        .finding-detail {
+            width: 100%;
+            min-height: 0;
+            justify-content: flex-start;
+            gap: 0.875rem;
+        }
+
+        .finding-action {
+            padding: 0.875rem 1rem 0.875rem 1.125rem;
+            border-radius: 0 0.75rem 0.75rem 0;
+
+            p {
+                min-height: 0;
+                margin-top: 0.5rem;
+                font-size: 1.0625rem;
+            }
+        }
+    }
+}

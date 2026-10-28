@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @property --card-glow-1 {
     syntax: '<color>';
     inherits: true;
@@ -19,6 +18,10 @@
     --card-glow-2: rgba(255, 151, 91, 0);
     --card-glow-1-hover: rgba(246, 77, 0, 0.375);
     --card-glow-2-hover: rgba(255, 151, 91, 0);
+    --brand-orange: #ff5a00;
+    --brand-coral: #ff694a;
+    --brand-peach: #ffb58a;
+    --brand-apricot: #ff9b52;
 }
 
 html,
@@ -26,6 +29,7 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
     scrollbar-width: thin;
+    scrollbar-color: rgb(246, 77, 0) rgb(11, 11, 11);
 }
 
 body {
@@ -33,17 +37,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: rgb(11, 11, 11);
     color: rgb(228, 228, 228);
-    //font-family: "Instrument Serif", serif;
-    //font-family: "Geist", sans-serif;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter), sans-serif;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
     &::selection {
-        background-color: rgb(16, 16, 16);
+        background-color: rgb(14, 14, 14);
         color: rgb(252, 252, 252);
     }
 }
@@ -78,6 +81,7 @@ img {
     display: flex;
     opacity: 1;
     pointer-events: auto;
+
     &::before {
         position: absolute;
         z-index: 0;
@@ -93,22 +97,26 @@ img {
         transition: opacity 0.3s ease;
         content: '';
     }
+
     .introContent {
         position: relative;
         display: flex;
         flex-direction: column;
         margin: auto;
+
         .logo {
             display: flex;
             flex-direction: column;
             margin: 0 auto 1rem;
+
             .logoIcon {
                 font-size: clamp(3.5rem, 8vw, 7rem);
                 color: rgb(228, 228, 228);
                 margin: 0 auto 0.5rem;
             }
+
             .logoText {
-                font-family: 'Geist', sans-serif;
+                font-family: var(--font-geist), sans-serif;
                 font-size: clamp(1.75rem, 5vw, 3.75rem);
                 font-weight: 500;
                 letter-spacing: 0;
@@ -117,8 +125,9 @@ img {
                 text-wrap: balance;
             }
         }
+
         .tagline {
-            font-family: 'Geist', sans-serif;
+            font-family: var(--font-geist), sans-serif;
             font-size: clamp(14px, 2.25vw, 22px);
             font-weight: 300;
             letter-spacing: 0.01em;

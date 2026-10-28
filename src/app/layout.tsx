@@ -1,8 +1,10 @@
 import LenisProvider from '@/components/LenisProvider';
 import type { Metadata } from 'next';
+import { Geist, Instrument_Serif, Inter } from 'next/font/google';
 import './globals.scss';
 import '../styles/navbar.scss';
 import '../styles/header.scss';
+import '../styles/seoWorkspace.scss';
 import '../styles/results.scss';
 import '../styles/services.scss';
 import '../styles/getStarted.scss';
@@ -12,6 +14,26 @@ import '../styles/companyInNumbers.scss';
 import '../styles/Faq.scss';
 import '../styles/footer.scss';
 import IntroScreen from '@/components/IntroScreen';
+
+const geist = Geist({
+    subsets: ['latin', 'latin-ext'],
+    variable: '--font-geist',
+    display: 'swap',
+});
+
+const inter = Inter({
+    subsets: ['latin', 'latin-ext'],
+    variable: '--font-inter',
+    display: 'swap',
+});
+
+const instrumentSerif = Instrument_Serif({
+    subsets: ['latin', 'latin-ext'],
+    weight: '400',
+    style: ['normal', 'italic'],
+    variable: '--font-instrument-serif',
+    display: 'swap',
+});
 
 export const metadata: Metadata = {
     title: 'SEO SaaS Company',
@@ -25,8 +47,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <LenisProvider />
-            <body>
+            <body className={`${geist.variable} ${inter.variable} ${instrumentSerif.variable}`}>
+                <LenisProvider />
                 <IntroScreen />
                 {children}
             </body>

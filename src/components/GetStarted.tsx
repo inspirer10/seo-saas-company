@@ -6,7 +6,7 @@ import SubHeading from './SubHeading';
 
 function GetStarted() {
     return (
-        <section className='getStarted_section'>
+        <section className='getStarted_section' id='get-started'>
             <OverHeading>GET STARTED</OverHeading>
 
             <Heading>
@@ -28,7 +28,6 @@ function GetStarted() {
                         alt='user avatar'
                         height={70}
                         width={70}
-                        quality={100}
                     />
                     <div className='info-wrapper'>
                         <p className='name'>Marcus Saristo</p>

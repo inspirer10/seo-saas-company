@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     h2 {
-        font-family: "Instrument Serif", serif;
+        font-family: var(--font-instrument-serif), serif;
         font-size: 5rem;
         font-weight: 500;
         font-style: italic;

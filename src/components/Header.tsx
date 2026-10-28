@@ -41,13 +41,12 @@ const logosData: LogoImage[] = [
 
 function Header() {
     return (
-        <header>
+        <header id='top'>
             <div className='overHeading'>
                 <Image
                     src={'/image1.jpg'}
                     height={70}
                     width={70}
-                    quality={85}
                     priority={true}
                     alt='user avatar'
                 />
@@ -55,7 +54,6 @@ function Header() {
                     src={'/image2.jpg'}
                     height={70}
                     width={70}
-                    quality={85}
                     priority={true}
                     alt='user avatar'
                 />
@@ -63,7 +61,6 @@ function Header() {
                     src={'/image3.jpg'}
                     height={70}
                     width={70}
-                    quality={85}
                     priority={true}
                     alt='user avatar'
                 />
@@ -71,7 +68,6 @@ function Header() {
                     src={'/image4.jpg'}
                     height={70}
                     width={70}
-                    quality={85}
                     priority={true}
                     alt='user avatar'
                 />
@@ -79,19 +75,19 @@ function Header() {
             </div>
 
             <Heading delay={1.625}>
-                Winning <span>SEO</span> for <br /> Online Success
+                Winning <span>SEO</span> for <br className='desktop-only-break' /> Online Success
             </Heading>
 
             <SubHeading
                 delay={1.75}
                 text='Drive more traffic, rank higher on Google, and grow your
-                business with expert SEO strategics that deliver real resutls.'
+                business with expert SEO strategies that deliver real results.'
             />
 
             <div className='buttons-wrapper'>
                 <button className='book-button'>Book a Call</button>
                 <button className='success-button'>
-                    See our Success Stores
+                    See our Success Stories
                 </button>
             </div>
 
@@ -106,7 +102,6 @@ function Header() {
                             height={60}
                             width={100}
                             priority={true}
-                            quality={70}
                             alt={alt}
                         />
                     ))}

@@ -6,7 +6,7 @@
     background: linear-gradient(10deg, rgba(10, 10, 10, 1.000) 0.000%, rgba(10, 10, 10, 1.000) 25.000%, rgba(255, 90, 57, .125) 55.000%, rgba(10, 10, 10, 1.000) 62.5%, rgba(10, 10, 10, 1.000) 100.000%);
     .overHeading {
         color: rgb(150, 150, 150);
-        font-family: 'Geist', sans-serif;
+        font-family: var(--font-geist), sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 1;
@@ -32,7 +32,7 @@
         font-weight: 500;
         letter-spacing: -0.75px;
         span {
-            font-family: "Instrument Serif", serif;
+            font-family: var(--font-instrument-serif), serif;
             font-style: italic;
             letter-spacing: 0.25px;
         }

@@ -30,27 +30,27 @@ footer {
                     cursor: pointer;
                 }
                 span {
-                    font-family: 'Geist', sans-serif;
+                    font-family: var(--font-geist), sans-serif;
                     font-size: 28px;
                     line-height: 1;
                 }
             }
             .address {
                 color: rgb(215, 215, 215);
-                font-family: 'Inter', sans-serif;
+                font-family: var(--font-inter), sans-serif;
                 margin: 2rem 0;
                 font-weight: 400;
                 letter-spacing: 0px;
             }
             h5 {
-                font-family: 'Geist', sans-serif;
+                font-family: var(--font-geist), sans-serif;
                 color: rgb(235, 235, 235);
                 margin-bottom: 1rem;
                 font-size: 22px;
                 font-weight: 500;
             }
             .footer-link {
-                font-family: 'Geist', sans-serif;
+                font-family: var(--font-geist), sans-serif;
                 padding: 2px 0;
                 margin: 0.5rem 0;
                 color: rgb(165, 165, 165);
@@ -99,7 +99,7 @@ footer {
                 }
             }
             button {
-                font-family: 'Geist', sans-serif;
+                font-family: var(--font-geist), sans-serif;
                 background-color: transparent;
                 color: #fff;
                 border-radius: 16px;
